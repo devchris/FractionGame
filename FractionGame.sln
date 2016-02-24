@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionGame.CSharp.Plugins", "FractionGame.CSharp.Plugins.csproj", "{97879CD4-3E6E-CF73-9A64-55889CCC2C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionGame.CSharp", "FractionGame.CSharp.csproj", "{6DFD91F9-884A-9593-AF94-593877D94CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionGame.CSharp.Editor", "FractionGame.CSharp.Editor.csproj", "{576FE582-9D26-545F-D03B-4C45638BDFBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97879CD4-3E6E-CF73-9A64-55889CCC2C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97879CD4-3E6E-CF73-9A64-55889CCC2C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97879CD4-3E6E-CF73-9A64-55889CCC2C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97879CD4-3E6E-CF73-9A64-55889CCC2C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DFD91F9-884A-9593-AF94-593877D94CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFD91F9-884A-9593-AF94-593877D94CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFD91F9-884A-9593-AF94-593877D94CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFD91F9-884A-9593-AF94-593877D94CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576FE582-9D26-545F-D03B-4C45638BDFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576FE582-9D26-545F-D03B-4C45638BDFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576FE582-9D26-545F-D03B-4C45638BDFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576FE582-9D26-545F-D03B-4C45638BDFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
