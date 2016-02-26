@@ -91,30 +91,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.EditorTestsRunner">
-      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TreeEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -136,84 +112,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AdventureCreator\2D Demo\Scripts\Editor\ToolbarLinks2DDemo.cs" />
-    <Compile Include="Assets\AdventureCreator\Demo\Scripts\Editor\ToolbarLinksDemo.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\ActionList\Editor\ActionListAssetEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\ActionList\Editor\ActionListEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\ActionList\Editor\ActionListEditorWindow.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\ActionList\Editor\ActionListEditorWindowData.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\ActionList\Editor\EditorZoomArea.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\ActionList\Editor\HierarchyIcons.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\FirstPersonCameraEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\FollowTintMapEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\GameCamera25DEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\GameCamera2DEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\GameCameraAnimatedEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\GameCameraEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\GameCameraThirdPersonEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\MainCameraEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\TintMapEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Camera\Editor\_CameraEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Character\Editor\CharEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Character\Editor\NPCEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Character\Editor\PlayerEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Inventory\Editor\InvActionListAsset.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Inventory\Editor\InvActionListEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\AC_TriggerEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\ArrowPromptEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\ContainerEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\ConversationEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\ConversationEditorWindow.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\CutsceneEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\DialogueOptionEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\HotspotEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\InteractionEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Logic\Editor\SoundEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\ActiveInputsWindow.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\AdventureCreator.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\AlphaNumericSort.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\CharacterWizardWindow.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\ManagerPackageAsset.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\ManagerPackageEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\NewGameWizardWindow.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Managers\Editor\ToolbarLinks.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Menu\Editor\MenuActionListAsset.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Menu\Editor\MenuActionListEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\DragBaseEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\DragTrackEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\DragTrack_CurvedEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\DragTrack_HingeEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\DragTrack_StraightEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\Moveable_DragEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Moveable\Editor\Moveable_PickUpEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Navigation\Editor\FollowSortingMapEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Navigation\Editor\NavigationMeshEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Navigation\Editor\PathsEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Navigation\Editor\PlayerStartEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Navigation\Editor\SortingMapEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Object\Editor\AlignToCameraEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Object\Editor\DetectHotspotsEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Object\Editor\HighlightEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Object\Editor\MenuLinkEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Object\Editor\Parallax2DEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Object\Editor\ShapeableEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\ConstantIDEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberColliderEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberConversationEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberHotspotEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberMoveableEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberNPCEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberTransformEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberTriggerEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Save system\Editor\RememberVisibilityEditor.cs" />
-    <Compile Include="Assets\AdventureCreator\Scripts\Speech\Editor\LipSyncTextureEditor.cs" />
     <Compile Include="Assets\CircularGravityForce Package\Scrips\Editor\CircularGravity2D_Editor.cs" />
     <Compile Include="Assets\CircularGravityForce Package\Scrips\Editor\CircularGravity_Editor.cs" />
     <Compile Include="Assets\CircularGravityForce Package\Scrips\Editor\CircularGravity_Tool.cs" />
     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AdventureCreator\Graphics\Fonts\SIL Open Font License.txt" />
     <None Include="Assets\Asset Store\RetroLamps\Shaders\Lamps_rimShaderSpecEmi.shader" />
     <None Include="Assets\Asset Store\RetroLamps\Shaders\Lamps_rimShader_dust.shader" />
     <None Include="Assets\Asset Store\RetroLamps\Shaders\Lamps_rimShader_simple.shader" />
