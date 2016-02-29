@@ -26,31 +26,26 @@ public class Controller : MonoBehaviour
         anim.SetBool("IsWalking", false);
         if (Input.GetKeyDown(KeyCode.Space))
             playerRigidbody.AddForce(transform.up * jump, ForceMode.Impulse);
-        h = Input.GetAxisRaw("Horizontal");
-        if (h == -1)
-            Move(0f);
-        Move(h);
-        Animation(h);
 
-        GetComponent<Rigidbody>().rotation = Quaternion.Euler(GetComponent<Rigidbody>().velocity.x * tiltX, 90.0f, 0.0f);
-      
-        if (gameObject.transform.position.x >= 22)
-        {
-            anim.SetBool("IsWalking", false);
-            Destroy(this,0.5f);
+            float h = Input.GetAxisRaw("Horizontal");
+            float v = Input.GetAxisRaw("Vertical");
+            // if (setActive == true)
+            //{
+            Move(h, v);
+
         }
-    }
 
-    void Move(float h)
-    {
-        movement.Set(h, 0f, 0f);
-        movement = movement.normalized*speed*Time.deltaTime; // time between every call
-        playerRigidbody.MovePosition(transform.position + movement);
-    }
+        void Move(float h, float v)
+        {
+        movement.Set(h, 0f, v);
+        movement = movement.normalized * speed * Time.deltaTime; // time between every call
+        playerRigidbody.MovePosition(transform.localPosition + movement);
+    //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Camera.main.transform.localEulerAngles.y, transform.localEulerAngles.z);
+}
 
-    void Animation(float h)
+    void Animation(float h, float v)
     {
-        bool walking = h != 0f;
+        bool walking = h != 0f || v != 0f;
         if (walking)
             anim.SetBool("IsWalking", true);
     }
