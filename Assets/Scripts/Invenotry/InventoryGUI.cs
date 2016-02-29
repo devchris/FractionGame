@@ -6,11 +6,11 @@ using UnityEngine.EventSystems;
 public class InventoryGUI : MonoBehaviour
 {
     private bool inventoryToggle = false;
-    private Rect inventoryRect = new Rect(300, 100, 410, 410);
+    private Rect inventoryRect = new Rect(300, 100, 422, 240);
 
     bool usingSlider;
 
-    static public Dictionary<int, string> InventoryNameDictionary = new Dictionary<int, string>()
+    static public Dictionary<int, Texture2D> InventoryNameDictionary = new Dictionary<int, Texture2D>()
         {
             {0, null},
             {1, null},
@@ -36,64 +36,13 @@ public class InventoryGUI : MonoBehaviour
     {
 
 
-        if (usingSlider == true)
-        {
-            FractionManager.score -= 1;
-            dictonaryAmounts[0] -= 1;
-            if (dictonaryAmounts[0] == 0)
-                InventoryNameDictionary[0] = string.Empty;
-        }
-
-        if (Input.touchCount == 0)
-            usingSlider = false;
-
-        if (GUILayout.Button(InventoryNameDictionary[1]) && Input.GetKeyDown(KeyCode.Mouse1) == true)
-        {
-            FractionManager.score -= 2;
-            dictonaryAmounts[1] -= 1;
-            if (dictonaryAmounts[1] == 0)
-                InventoryNameDictionary[1] = string.Empty;
-        }
-
-        else if (GUILayout.Button(InventoryNameDictionary[2]) && Input.GetKeyDown(KeyCode.Mouse1) == true)
-        {
-            FractionManager.score -= 3;
-            dictonaryAmounts[2] -= 1;
-            if (dictonaryAmounts[2] == 0)
-                InventoryNameDictionary[2] = string.Empty;
-        }
-
-        else if (GUILayout.Button(InventoryNameDictionary[3]) && Input.GetKeyDown(KeyCode.Mouse1) == true)
-        {
-            FractionManager.score -= 4;
-            dictonaryAmounts[3] -= 1;
-            if (dictonaryAmounts[3] == 0)
-                InventoryNameDictionary[3] = string.Empty;
-        }
-
-        else if (GUILayout.Button(InventoryNameDictionary[4]) && Input.GetKeyDown(KeyCode.Mouse1) == true)
-        {
-            FractionManager.score -= 5;
-            dictonaryAmounts[4] -= 1;
-            if(dictonaryAmounts[4] == 0)
-                InventoryNameDictionary[4] = string.Empty;
-        }
-
-        else if (GUILayout.Button(InventoryNameDictionary[5]) && Input.GetKeyDown(KeyCode.Mouse1) == true)
-        {
-            FractionManager.score -= 6;
-            dictonaryAmounts[5] -= 1;
-            if (dictonaryAmounts[5] == 0)
-                InventoryNameDictionary[5] = string.Empty;
-        }
-
     }
 
     void OnGUI()
     {
         inventoryToggle = GUI.Toggle(new Rect(50, 30, 150, 75), inventoryToggle, "Inventory");
 
-        if(inventoryToggle)
+        if (inventoryToggle)
         {
             inventoryRect = GUI.Window(0, inventoryRect, inventoryMethod, "Inventory");
         }
@@ -110,33 +59,104 @@ public class InventoryGUI : MonoBehaviour
         InventoryNameDictionary[5] = cog56.name;
         InventoryNameDictionary[6] = cog66.name;*/
 
-        GUILayout.BeginArea(new Rect(5, 50, 400, 400));
+        GUILayout.BeginArea(new Rect(5, 50, 440, 440));
 
         GUILayout.BeginHorizontal();
-        GUILayout.Button(InventoryNameDictionary[0], GUILayout.Height(50));
-        GUILayout.Box(dictonaryAmounts[0].ToString(), GUILayout.Height(50));
 
-        GUILayout.Button(InventoryNameDictionary[1], GUILayout.Height(50));
-        GUILayout.Box(dictonaryAmounts[1].ToString(), GUILayout.Height(50));
+        if(GUI.Button(new Rect(1, 2, 70, 70), InventoryNameDictionary[0]))
+        {
+            if (dictonaryAmounts[0] != 0)
+            {
+                dictonaryAmounts[0] -= 1;
+                FractionManager.score -= 1;
+            }
+            /*if (dictonaryAmounts[0] == 0) // not working. How do I update the button above? Do I want to not show anything or just keep the same icon there all the time?
+            {
+                itemObject.cog16.SetIcon(null);
+                GUI.Button(new Rect(1, 2, 70, 70), "");
+            }*/
+        }
+        GUI.Box(new Rect(73, 13, 50, 50), dictonaryAmounts[0].ToString());
 
+        if (GUI.Button(new Rect(145, 2, 70, 70), InventoryNameDictionary[1]))
+        {
+            if (dictonaryAmounts[1] != 0)
+            {
+                dictonaryAmounts[1] -= 1;
+                FractionManager.score -= 2;
+            }
+            /*if (dictonaryAmounts[1] == 0) // not working. How do I update the button above? Do I want to not show anything or just keep the same icon there all the time?
+            {
+                itemObject.cog26.SetIcon(null);
+                GUI.Button(new Rect(145, 2, 70, 70), "");
+            }*/
+        }
+        GUI.Box(new Rect(217, 13, 50, 50), dictonaryAmounts[1].ToString());
 
-        GUILayout.Button(InventoryNameDictionary[2], GUILayout.Height(50));
-        GUILayout.Box(dictonaryAmounts[2].ToString(), GUILayout.Height(50));
+        if(GUI.Button(new Rect(288, 2, 70, 70), InventoryNameDictionary[2]))
+        {
+            if (dictonaryAmounts[2] != 0)
+            {
+                dictonaryAmounts[2] -= 1;
+                FractionManager.score -= 3;
+            }
+            /*if (dictonaryAmounts[2] == 0) 
+            {
+                itemObject.cog36.SetIcon(null);
+                GUI.Button(new Rect(288, 2, 70, 70), "");
+            }*/
+        }
+        GUI.Box(new Rect(360, 13, 50, 50), dictonaryAmounts[2].ToString());
         GUILayout.EndHorizontal();
-
 
         GUILayout.BeginHorizontal();
-        GUILayout.Button(InventoryNameDictionary[3], GUILayout.Height(50));
-        GUILayout.Box(dictonaryAmounts[3].ToString(), GUILayout.Height(50));
+        if(GUI.Button(new Rect(1, 90, 70, 70), InventoryNameDictionary[3]))
+        {
+            if (dictonaryAmounts[3] != 0)
+            {
+                dictonaryAmounts[3] -= 1;
+                FractionManager.score -= 4;
+            }
+            /*if (dictonaryAmounts[3] == 0)
+            {
+                itemObject.cog46.SetIcon(null);
+                GUI.Button(new Rect(1, 90, 70, 70), "");
+            }*/
+        }
+        GUI.Box(new Rect(73, 103, 50, 50), dictonaryAmounts[3].ToString());
 
-        GUILayout.Button(InventoryNameDictionary[4], GUILayout.Height(50));
-        GUILayout.Box(dictonaryAmounts[4].ToString(), GUILayout.Height(50));
+        if(GUI.Button(new Rect(145, 90, 70, 70), InventoryNameDictionary[4]))
+        {
+            if (dictonaryAmounts[4] != 0)
+            {
+                dictonaryAmounts[4] -= 1;
+                FractionManager.score -= 5;
+            }
+            /*if (dictonaryAmounts[4] == 0)
+            {
+                itemObject.cog56.SetIcon(null);
+                GUI.Button(new Rect(145, 90, 70, 70), "");
+            }*/
+        }
+        GUI.Box(new Rect(217, 103, 50, 50), dictonaryAmounts[4].ToString());
 
-        GUILayout.Button(InventoryNameDictionary[5], GUILayout.Height(50));
-        GUILayout.Box(dictonaryAmounts[5].ToString(), GUILayout.Height(50));
-
+        if (GUI.Button(new Rect(288, 90, 70, 70), InventoryNameDictionary[5]))
+        {
+            if (dictonaryAmounts[5] != 0)
+            {
+                dictonaryAmounts[5] -= 1;
+                FractionManager.score -= 6;
+            }
+            /*if (dictonaryAmounts[5] == 0)
+            {
+                itemObject.cog66.SetIcon(null);
+                GUI.Button(new Rect(288, 90, 70, 70), "");
+            }*/
+        }
+        GUI.Box(new Rect(360, 103, 50, 50), dictonaryAmounts[5].ToString());
         GUILayout.EndHorizontal();
+
         GUILayout.EndArea();
 
-    }
+    } 
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Loot : MonoBehaviour {
 
+    public Texture2D i1;
     public int fractionValue;
     public GameObject target;
 
@@ -54,37 +55,43 @@ public class Loot : MonoBehaviour {
             /////////////////////////
             if (fractionValue == 1)
             {
-                InventoryGUI.InventoryNameDictionary[0] = itemObject.cog16.name;
+                itemObject.cog16.SetIcon(i1);
+                InventoryGUI.InventoryNameDictionary[0] = itemObject.cog16.icon;
                 InventoryGUI.dictonaryAmounts[0] += 1;
             }
 
             else if (fractionValue == 2)
             {
-                InventoryGUI.InventoryNameDictionary[1] = itemObject.cog26.name;
+                itemObject.cog26.SetIcon(i1);
+                InventoryGUI.InventoryNameDictionary[1] = itemObject.cog26.icon;
                 InventoryGUI.dictonaryAmounts[1] += 1;
             }
 
             else if (fractionValue == 3)
             {
-                InventoryGUI.InventoryNameDictionary[2] = itemObject.cog36.name;
+                itemObject.cog36.SetIcon(i1);
+                InventoryGUI.InventoryNameDictionary[2] = itemObject.cog36.icon;
                 InventoryGUI.dictonaryAmounts[2] += 1;
             }
 
             else if (fractionValue == 4)
             {
-                InventoryGUI.InventoryNameDictionary[3] = itemObject.cog46.name;
+                itemObject.cog46.SetIcon(i1);
+                InventoryGUI.InventoryNameDictionary[3] = itemObject.cog46.icon;
                 InventoryGUI.dictonaryAmounts[3] += 1;
             }
 
             else if (fractionValue == 5)
             {
-                InventoryGUI.InventoryNameDictionary[4] = itemObject.cog56.name;
+                itemObject.cog56.SetIcon(i1);
+                InventoryGUI.InventoryNameDictionary[4] = itemObject.cog56.icon;
                 InventoryGUI.dictonaryAmounts[4] += 1;
             }
 
             else if (fractionValue == 6)
             {
-                InventoryGUI.InventoryNameDictionary[5] = itemObject.cog66.name;
+                itemObject.cog66.SetIcon(i1);
+                InventoryGUI.InventoryNameDictionary[5] = itemObject.cog66.icon;
                 InventoryGUI.dictonaryAmounts[5] += 1;
             }
             /////////////////////////
