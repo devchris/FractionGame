@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -106,6 +100,16 @@
     <Compile Include="Assets\CircularGravityForce Package\Scrips\Tools\SceneTimeScale.cs" />
     <Compile Include="Assets\CircularGravityForce Package\Scrips\Tools\Spawn.cs" />
     <Compile Include="Assets\CircularGravityForce Package\Scrips\Tools\Timer.cs" />
+    <Compile Include="Assets\Menu\Scripts\Achievements\OutputAchievements.cs" />
+    <Compile Include="Assets\Menu\Scripts\Achievements\TrophySelection.cs" />
+    <Compile Include="Assets\Menu\Scripts\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Menu\Scripts\Inventory\OutputInventory.cs" />
+    <Compile Include="Assets\Menu\Scripts\Navigation\MenuNavigation.cs" />
+    <Compile Include="Assets\Menu\Scripts\OverallInfo\Item.cs" />
+    <Compile Include="Assets\Menu\Scripts\OverallInfo\Stats.cs" />
+    <Compile Include="Assets\Menu\Scripts\Shop\Shop.cs" />
+    <Compile Include="Assets\Menu\Scripts\Shop\SwitchTab.cs" />
+    <Compile Include="Assets\Menu\Scripts\Statistics\OutputStats.cs" />
     <Compile Include="Assets\MinionRunner\Animations\AnimationMinion.cs" />
     <Compile Include="Assets\MinionRunner\Scripts\Hover\loader.cs" />
     <Compile Include="Assets\MinionRunner\Scripts\Levels\Level 1\Level11.cs" />
@@ -146,6 +150,7 @@
     <Compile Include="Assets\Scripts\Invenotry\InventoryGUI.cs" />
     <Compile Include="Assets\Scripts\Invenotry\ItemClass.cs" />
     <Compile Include="Assets\Scripts\Invenotry\Loot.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\SubmitButton.cs" />
     <Compile Include="Assets\Scripts\Player Movement Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Player\ClimbLadder.cs" />
