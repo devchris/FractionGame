@@ -3,51 +3,59 @@ using System.Collections;
 
 public class Controller : MonoBehaviour
 {
-    public float speed;
+    public float speed = 6f;
     public float jump;
-    public float tiltX;
+    [HideInInspector]
+    public static bool setActive;
 
-    float h;
-
-    Animator anim;
     Vector3 movement;
+    Animator anim;
     Rigidbody playerRigidbody;
-
+    int floorMask;
+    float camRayLength = 1000f;
     
 
     void Awake()
     {
-        playerRigidbody = GetComponent<Rigidbody>();
+        floorMask = LayerMask.GetMask("Floor");
         anim = GetComponent<Animator>();
+        playerRigidbody = GetComponent<Rigidbody>();
     }
+
 
     void FixedUpdate()
     {
-        anim.SetBool("IsWalking", false);
         if (Input.GetKeyDown(KeyCode.Space))
             playerRigidbody.AddForce(transform.up * jump, ForceMode.Impulse);
 
-            float h = Input.GetAxisRaw("Horizontal");
-            float v = Input.GetAxisRaw("Vertical");
-            // if (setActive == true)
-            //{
-            Move(h, v);
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        // if (setActive == true)
+        //{
+        Move(h, v);
+        Animating(h, v);
+        // }
+    }
 
-        }
-
-        void Move(float h, float v)
-        {
+    void Move(float h, float v)
+    {
         movement.Set(h, 0f, v);
         movement = movement.normalized * speed * Time.deltaTime; // time between every call
         playerRigidbody.MovePosition(transform.localPosition + movement);
-    //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Camera.main.transform.localEulerAngles.y, transform.localEulerAngles.z);
-}
-
-    void Animation(float h, float v)
-    {
-        bool walking = h != 0f || v != 0f;
-        if (walking)
-            anim.SetBool("IsWalking", true);
+        //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, Camera.main.transform.localEulerAngles.y, transform.localEulerAngles.z);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
+
+    void Animating(float h, float v)
+    {
+        bool walking = h != 0f || v != 0f;
+        anim.SetBool("IsWalking", walking);
+    }
 }
