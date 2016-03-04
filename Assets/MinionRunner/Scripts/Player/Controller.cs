@@ -5,6 +5,7 @@ public class Controller : MonoBehaviour
 {
     public float speed = 6f;
     public float jump;
+    public float jumpRate;
     [HideInInspector]
     public static bool setActive;
 
@@ -13,7 +14,8 @@ public class Controller : MonoBehaviour
     Rigidbody playerRigidbody;
     int floorMask;
     float camRayLength = 1000f;
-    
+
+    private float nextJump;
 
     void Awake()
     {
@@ -25,8 +27,11 @@ public class Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextJump)
+        {
+            nextJump = Time.time + jumpRate;
             playerRigidbody.AddForce(transform.up * jump, ForceMode.Impulse);
+        }
 
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");

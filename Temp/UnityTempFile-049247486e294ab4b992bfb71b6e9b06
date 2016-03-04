@@ -1,0 +1,171 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_3
+-define:UNITY_5_3
+-define:UNITY_5
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_LOG_MIXED_STACKTRACE
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:CROSS_PLATFORM_INPUT
+"Assets/Asset Store/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/CircularGravity.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/CircularGravity2D.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Controls/CGF_AxisControls.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Controls/CGF_AxisControls2D.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Controls/CGF_KeyControls.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Controls/CGF_KeyControls2D.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Mods/CGF_Pulse.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Mods/CGF_Pulse2D.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Mods/CGF_SizeByRaycast.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Mods/CGF_SizeByRaycast2D.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Triggers/CGF_EnableTrigger.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Triggers/CGF_EnableTrigger2D.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Triggers/CGF_HoverTrigger.cs"
+"Assets/CircularGravityForce Package/Scrips/CircularGravity/Triggers/CGF_HoverTrigger2D.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/Gun.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/Rocket.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/RocketExplosion.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/SceneSettings.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/UI_CGF_Toggle_Text.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/UI_GunIcon.cs"
+"Assets/CircularGravityForce Package/Scrips/Misc/UI_Slider_Text_Bind.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/LockOnTo.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/LockTo.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/LookTo.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/LookTo2D.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/MoveTo.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/RotateAround.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/SceneTimeScale.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/Spawn.cs"
+"Assets/CircularGravityForce Package/Scrips/Tools/Timer.cs"
+Assets/Menu/Scripts/Achievements/OutputAchievements.cs
+Assets/Menu/Scripts/Achievements/TrophySelection.cs
+Assets/Menu/Scripts/Inventory/Inventory.cs
+Assets/Menu/Scripts/Inventory/OutputInventory.cs
+Assets/Menu/Scripts/Navigation/MenuNavigation.cs
+Assets/Menu/Scripts/OverallInfo/Item.cs
+Assets/Menu/Scripts/OverallInfo/Stats.cs
+Assets/Menu/Scripts/Shop/Shop.cs
+Assets/Menu/Scripts/Shop/SwitchTab.cs
+Assets/Menu/Scripts/Statistics/OutputStats.cs
+Assets/MinionRunner/Animations/AnimationMinion.cs
+Assets/MinionRunner/Scripts/Hover/loader.cs
+"Assets/MinionRunner/Scripts/Levels/Level 1/Level11.cs"
+"Assets/MinionRunner/Scripts/Levels/Level 1/Level11/Submit11.cs"
+"Assets/MinionRunner/Scripts/Levels/Level 1/Level11/Submit12.cs"
+"Assets/MinionRunner/Scripts/Levels/Level 1/Level12.cs"
+Assets/MinionRunner/Scripts/Loading/CircleLoader.cs
+Assets/MinionRunner/Scripts/Menu/ClickSpawn.cs
+Assets/MinionRunner/Scripts/Menu/LoadOnClick.cs
+Assets/MinionRunner/Scripts/Pickups/Pickup.cs
+Assets/MinionRunner/Scripts/Pickups/RotationPickup.cs
+Assets/MinionRunner/Scripts/Platforms/Character.cs
+Assets/MinionRunner/Scripts/Platforms/MovingPlatforms.cs
+Assets/MinionRunner/Scripts/Platforms/Rotation.cs
+Assets/MinionRunner/Scripts/Player/Controller.cs
+Assets/MinionRunner/Scripts/Player/ControllerTorque.cs
+Assets/MinionRunner/Scripts/Player/Destination.cs
+Assets/MinionRunner/Scripts/Player/Destroy.cs
+Assets/MinionRunner/Scripts/Player/Explosion.cs
+Assets/MinionRunner/Scripts/Player/Spawn.cs
+Assets/MinionRunner/Scripts/Sounds/JumpAudio.cs
+Assets/MinionRunner/Scripts/Sounds/SoundBackround.cs
+"Assets/Scripts/Camera Scripts/DungeonCamera.cs"
+"Assets/Scripts/Camera Scripts/FollowCamera.cs"
+"Assets/Scripts/Camera Scripts/LookAtCamera.cs"
+"Assets/Scripts/Camera Scripts/MouseAimCamera.cs"
+Assets/Scripts/Camera/CameraFollow.cs
+Assets/Scripts/Cogwheel/RandomSpawn.cs
+Assets/Scripts/Cogwheel/Rotator.cs
+Assets/Scripts/Cogwheel/UIRotator.cs
+Assets/Scripts/Cogwheel/UISwitch.cs
+"Assets/Scripts/Fraction Counting/Denominator.cs"
+"Assets/Scripts/Fraction Counting/Fraction.cs"
+"Assets/Scripts/Fraction Counting/Nominator.cs"
+"Assets/Scripts/Fraction Counting/ShowButton.cs"
+Assets/Scripts/FractionScore/FractionManager.cs
+Assets/Scripts/FractionScore/FractionScore.cs
+Assets/Scripts/Invenotry/InventoryGUI.cs
+Assets/Scripts/Invenotry/ItemClass.cs
+Assets/Scripts/Invenotry/Loot.cs
+Assets/Scripts/MainMenu.cs
+Assets/Scripts/Menu/SubmitButton.cs
+"Assets/Scripts/Player Movement Scripts/Player.cs"
+Assets/Scripts/Player/ClimbLadder.cs
+Assets/Scripts/Player/PlayerMovement.cs
+Assets/Scripts/Restart.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
